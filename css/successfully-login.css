@@ -1,0 +1,43 @@
+:root {
+  --primary-color: #79a637;
+  --secondary-color: #0d0d0d;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--secondary-color);
+}
+
+.parent {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  padding: 2vw;
+  width: 80vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  border: 4px solid #ffffff;
+  text-align: center;
+  word-break: break-word;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+.parent h2 span {
+  background-color: #ffffff;
+  border-radius: 50%;
+  padding: 0.4vw;
+  width: fit-content;
+}
+
+.parent h2 span i {
+  color: var(--primary-color);
+}

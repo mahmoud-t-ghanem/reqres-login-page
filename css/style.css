@@ -1,0 +1,229 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+:root {
+  --primary-color: #79a637;
+  --secondary-color: #0d0d0d;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+::selection {
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+
+.page {
+  background-color: var(--primary-color);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4vw;
+}
+
+.container {
+  background-color: #ffffff;
+  height: 80vh;
+  display: flex;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.image {
+  background-image: url("../images/clay-banks-oO6Gm16Cqcg-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 60%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.overley {
+  background-color: rgba(121, 166, 55, 0.2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.text {
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+  font-size: clamp(1rem, 5vw, 2rem);
+  font-weight: bold;
+  padding: 1vw;
+}
+
+.text div {
+  margin-bottom: 5px;
+}
+
+.text p {
+  font-size: clamp(0.7rem, 5vw, 1.2rem);
+  font-weight: normal;
+}
+
+.content {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2vw;
+}
+
+.title {
+  margin-bottom: 3vw;
+  font-size: clamp(1.3rem, 5vw, 2rem);
+  text-align: start;
+  position: relative;
+  color: var(--secondary-color);
+}
+.title::after {
+  content: "";
+  width: 40%;
+  height: 4px;
+  background-color: var(--primary-color);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.email,
+.password {
+  margin-bottom: 3vw;
+  border-bottom: 2px solid var(--secondary-color);
+  padding: 10px 1vw;
+  padding-left: 0px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.password {
+  margin-bottom: 15px;
+}
+
+i {
+  font-size: clamp(1.2rem, 6vw, 1.7rem);
+  color: var(--primary-color);
+}
+
+input {
+  border: none;
+  outline: none;
+  margin-left: 4px;
+  flex: 1;
+  font-size: clamp(0.6rem, 5vw, 1rem);
+  color: var(--secondary-color);
+}
+
+#email {
+  padding-top: 0.1vw;
+}
+
+#password {
+  padding-top: 0.5vw;
+}
+
+.forgot-password {
+  width: 100%;
+  margin-bottom: 3vw;
+  font-size: clamp(0.7rem, 5vw, 1rem);
+}
+.forgot-password a {
+  color: var(--primary-color);
+}
+.forgot-password a :visited {
+  color: var(--primary-color);
+}
+
+.login-button {
+  padding: 1.4vw;
+  width: 100%;
+  font-size: clamp(0.7rem, 5vw, 1.2rem);
+  border: none;
+  outline: none;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-bottom: 2.5vw;
+}
+.login-button:hover {
+  background-color: var(--secondary-color);
+}
+
+.signup-now {
+  font-size: clamp(0.7rem, 5vw, 1rem);
+  color: var(--secondary-color);
+}
+
+.signup-now a {
+  color: var(--primary-color);
+}
+
+@media (max-width: 600px) {
+  .page {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .image {
+    width: 40%;
+  }
+  .content {
+    width: 60%;
+  }
+}
+
+@media (max-width: 400px) {
+  .title {
+    margin-bottom: 5vw;
+  }
+  .email {
+    margin-bottom: 5vw;
+  }
+  .forgot-password {
+    margin-bottom: 5vw;
+  }
+  .login-button {
+    margin-bottom: 4vw;
+  }
+}
+
+.error-msg {
+  color: red;
+  margin-top: 15px;
+  font-size: clamp(0.7rem, 5vw, 1rem);
+  border: 2px solid red;
+  border-radius: 10px;
+  padding: 1vw;
+}
