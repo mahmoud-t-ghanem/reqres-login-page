@@ -24,7 +24,7 @@ a {
 
 .page {
   background-color: var(--primary-color);
-  height: 100vh;
+  height: 100dvh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,7 +33,7 @@ a {
 
 .container {
   background-color: #ffffff;
-  height: 80vh;
+  min-height: 80dvh;
   display: flex;
   width: 100%;
   border-radius: 10px;
@@ -92,7 +92,8 @@ a {
 }
 
 .title {
-  margin-bottom: 3vw;
+  /* margin-bottom: 3vw; */
+  margin-bottom: 4vh;
   font-size: clamp(1.3rem, 5vw, 2rem);
   text-align: start;
   position: relative;
@@ -118,7 +119,8 @@ form {
 
 .email,
 .password {
-  margin-bottom: 3vw;
+  /* margin-bottom: 3vw; */
+  margin-bottom: 4vh;
   border-bottom: 2px solid var(--secondary-color);
   padding: 10px 1vw;
   padding-left: 0px;
@@ -155,7 +157,8 @@ input {
 
 .forgot-password {
   width: 100%;
-  margin-bottom: 3vw;
+  /* margin-bottom: 3vw; */
+  margin-bottom: 4vh;
   font-size: clamp(0.7rem, 5vw, 1rem);
 }
 .forgot-password a {
@@ -176,7 +179,8 @@ input {
   border-radius: 20px;
   cursor: pointer;
   transition: 0.3s;
-  margin-bottom: 2.5vw;
+  /* margin-bottom: 2.5vw; */
+  margin-bottom: 3.5vh;
 }
 .login-button:hover {
   background-color: var(--secondary-color);
@@ -204,7 +208,7 @@ input {
   }
 }
 
-@media (max-width: 400px) {
+/* @media (max-width: 400px) {
   .title {
     margin-bottom: 5vw;
   }
@@ -217,7 +221,7 @@ input {
   .login-button {
     margin-bottom: 4vw;
   }
-}
+} */
 
 .error-msg {
   color: red;

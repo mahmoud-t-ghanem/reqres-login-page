@@ -4,7 +4,8 @@
 }
 
 .spinner {
-  margin: 0px auto 2.5vw;
+  /* margin: 0px auto 2.5vw; */
+  margin: 0px auto 3.5vh;
   width: 70px;
   text-align: center;
 }
