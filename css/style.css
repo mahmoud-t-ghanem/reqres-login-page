@@ -24,7 +24,7 @@ a {
 
 .page {
   background-color: var(--primary-color);
-  height: 100dvh;
+  min-height: 100dvh;
   width: 100dvw;
   display: flex;
   justify-content: center;
